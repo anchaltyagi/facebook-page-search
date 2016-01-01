@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>facebook Page Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="header-bar">
+            <div class="input-container">
+                <input class="search-input" type="search" placeholder="Search Facebook Pages" />
+                <div id='button-holder'>
+                    <img src='./images/search-icon.png' />                   
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="tabrow">
+               <li class="selected">Search Results</li>
+               <li>Favorites</li>
+            </ul>
+            <div class="item-container">
+                <!--Search results and favorites will be displayed here -->
+            </div>
+        </div>
+    </body>
+    <script src="js/util.js"></script>
+    <script src="js/fb-util.js"></script>
+    <script src="js/fbPgSearchApp.model.js"></script>
+    <script src="js/fbPgSearchApp.template.js"></script>
+    <script src="js/fbPgSearchApp.view.js"></script>
+    <script src="js/fbPgSearchApp.controller.js"></script>
+    <script src="js/fbPgSearchApp.router.js"></script>
+    <script src="js/app.js"></script>
+</html>
