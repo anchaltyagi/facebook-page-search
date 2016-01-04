@@ -5,12 +5,12 @@
     var fb_util = window.fb_util || {},
         FB = window.FB || {},
         counter = 0;
-        FB.ACCESSTOKEN = "CAACEdEose0cBANM7AWjf2tttizYRYQPkDQZAzvWn1GipruHFch5lpMGeY9YxMySxlcRb9m685WLpljr8JTb5iqi0XNxaiLR3VCiZCknt8B41av5BBtSNM1q20vnkABYJnrwEszZB23FORlOZAl93wPUaFUVwpaUKsffGMdkAJxU2pvr9CVZBHsjB6qPBheu1XR6kAVJW4pwZDZD";
+        FB.ACCESSTOKEN = "223381217994764|tWFqCGUKdbfRJxgnVypsrxUpyZQ";
 
     fb_util = {
         searchPages: function(searchQuery, callback, context) {
             var callbackName = "fbCallback" + (++counter);
-            var searchUrl = "https://graph.facebook.com/search?q=" + searchQuery + "&type=user&fields=id,name,picture&access_token=" + FB.ACCESSTOKEN + "&callback=" + callbackName;
+            var searchUrl = "https://graph.facebook.com/search?q=" + searchQuery + "&type=page&fields=id,name,category,picture&access_token=" + FB.ACCESSTOKEN + "&callback=" + callbackName;
             
             this.injectScript(searchUrl, callbackName, callback, context);
         },
